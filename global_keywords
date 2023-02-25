@@ -1,0 +1,21 @@
+total=0
+def count():
+    total+=1
+    return total
+print(count())
+
+#method1 for counting by using global variable
+total=0
+def count():
+    global total
+    total+=1
+    return total
+print(count())
+print(count())
+
+#method2 for counting by using global variable
+total=0
+def count(total):
+    total+=1
+    return total
+print(count(count(total)))

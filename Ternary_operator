@@ -1,0 +1,3 @@
+is_friend = True
+is_msg= 'send me the message' if is_friend else 'who r u'
+print(is_msg)

@@ -1,0 +1,8 @@
+#docstring
+def game(a):
+    '''
+    info:don't touch this code
+    '''
+    print(a)
+print(game.__doc__)
+print(help(game))

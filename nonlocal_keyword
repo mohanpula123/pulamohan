@@ -1,0 +1,12 @@
+def outer():
+    x = 'local'
+    def inner():
+        nonlocal x
+        x = 'non local'
+        print(x)
+        return x
+    inner()
+    print(x)
+    return x
+outer()
+    

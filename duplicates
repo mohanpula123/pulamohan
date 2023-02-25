@@ -1,0 +1,8 @@
+#find duplicates
+list = ['a','b','c','d','a']
+duplicate = []
+for i in list:
+    if list.count(i)>1:
+        if i not in duplicate:
+            duplicate.append(i)
+print(duplicate)

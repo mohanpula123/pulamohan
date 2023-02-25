@@ -1,0 +1,4 @@
+#walrus_operator
+a = 'helllooo'
+if n:=len(a)>1:
+    print(n)

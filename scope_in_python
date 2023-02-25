@@ -1,0 +1,21 @@
+if True:
+    x=190
+def super():
+    x=2000
+    return x
+print(x)
+print(super())
+
+x = 190
+def myfunc():
+    return x
+print(myfunc())
+
+#parent and child
+x = 190
+def parent():
+    x = 777
+    def child():
+        return x
+    return child()
+parent()

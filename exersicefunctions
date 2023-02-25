@@ -1,0 +1,11 @@
+#exercise on functions
+def highest_even():
+    return highest_even()
+l = [10,2,3,4,5]
+evens=[]
+for i in l:
+    if i%2==0:
+        print(i)
+    evens.append(i)
+evens.sort()
+print(max(evens))

@@ -1,0 +1,24 @@
+is_old = True
+is_licensed = False
+if is_old and is_licensed:
+     print("congrats")
+elif is_old:
+     print("you have sufficient age to drive but you don't have license")
+else:
+     print("sorry you have not enought age to drive")
+
+by using and:
+
+is_old = True
+is_licensed = False
+if is_old and is_licensed:
+    print('congrats ')
+elif is_old:
+    print('sorry you have no license to drive')
+
+Truthy Vs Falsy:
+
+is_old = 5
+is _aged = 'hello'
+print(bool(is_old))
+print(bool(is_age))

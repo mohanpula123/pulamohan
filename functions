@@ -1,0 +1,22 @@
+#function
+
+def say():
+    return 'hello'
+say()
+
+def say(name,age):
+    (print(f'hiii {name} you\'re age {age}'))
+say('mohan',24)
+
+def say(age,name):
+    print((print(f'hiii {name} you\'re age {age}')))
+say(name='mohan',age=24)
+def adding(n1,n2):
+    return n1+n2
+adding(11,23)
+
+def adding(n1,n2):
+    def another(m1,m2):
+        return m1+m2
+    return n1+n2
+adding(777,888)
