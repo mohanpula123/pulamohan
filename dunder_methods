@@ -1,0 +1,43 @@
+str:
+
+class Toy():
+    def __init__(self,color,cost):
+        self.color=color
+        self.cost=cost
+    def __str__(self):
+        return "helllo"
+
+p1=Toy("red",130)
+print(p1.__str__())
+
+
+len:
+
+class Toy():
+    def __len__(self):
+      return 100
+
+p1=Toy()
+print(len(p1))
+
+class Toy():
+  def __del__(self):
+    return "delete"
+print("delete")
+
+class Toy():
+  def __call__(self):
+      return 'yess'
+ p1=Toy()
+ print(p1())
+
+exercise:extending list
+
+class SuperList(list):
+    def __len__(self):
+       return 5000
+su1=Superlist()
+print(len(su))
+su.append()
+print(su)
+       
