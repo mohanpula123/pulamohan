@@ -1,0 +1,76 @@
+
+class User:
+  def __init__(self,email):
+    self.email=email
+  def signin(self):
+    return "logged in"
+class Wizard(User):
+  def __init__(self,name,power):
+    self.name=name
+    self.power=power
+  def speak(self):
+    print(f'hello {self.name} you\'re power is {self.power}')
+class Archer(User):
+  def __init__(self,name,arrows):
+    self.name=name
+    self.arrows=arrows
+  def speak(self):
+    print(f'hello {self.name} you\'re arrows is {self.arrows}')
+
+w1=Wizard('mohan',80)
+a1=Archer('ravi',100)
+print(w1.speak())
+print(a1.speak())
+'''
+info: for suppose we need email of wizard or archer what we need to do thats where this method is useful
+'''
+# without using super(),method1:-
+class User:
+  def __init__(self,email):
+    self.email=email
+  def signin(self):
+    return "logged in"
+class Wizard(User):
+  def __init__(self,name,power,email):
+    User.__init__(self,email)
+    self.name=name
+    self.power=power
+  def speak(self):
+    print(f'hello {self.name} you\'re power is {self.power}')
+class Archer(User):
+  def __init__(self,name,arrows,email):
+    User.__init__(self,email)
+    self.name=name
+    self.arrows=arrows
+  def speak(self):
+    print(f'hello {self.name} you\'re arrows is {self.arrows}')
+
+w1=Wizard('mohan',80,"@gmail.com")
+a1=Archer('ravi',100,"**@gmail.com")
+print(w1.email)
+print(a1.email)
+#by using super(),method1:-
+class User:
+  def __init__(self,email):
+    self.email=email
+  def signin(self):
+    return "logged in"
+class Wizard(User):
+  def __init__(self,name,power,email):
+    super().__init__(email)
+    self.name=name
+    self.power=power
+  def speak(self):
+    print(f'hello {self.name} you\'re power is {self.power}')
+class Archer(User):
+  def __init__(self,name,arrows,email):
+    super().__init__(email)
+    self.name=name
+    self.arrows=arrows
+  def speak(self):
+    print(f'hello {self.name} you\'re arrows is {self.arrows}')
+
+w1=Wizard('mohan',80,"@gmail.com")
+a1=Archer('ravi',100,"**@gmail.com")
+print(w1.email)
+print(a1.email)
