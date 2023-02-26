@@ -1,0 +1,3 @@
+by using this it is possible to see the methods of object for example "print(dir(object)" it is possible to saw methods of that object
+syntax:
+  print(dir(object))
