@@ -1,0 +1,109 @@
+class PlayChar:
+  membership = True
+  def __init__(self,name,age):
+    if age >18:
+     self.name = name
+     self.age = age
+  def speak(self):
+    print(f'hello {self.name} your age is {self.age}')
+p1 = PlayChar('mohan',2)
+p1.attack = 100
+print(p1.name)
+
+---------------------------------------------------
+4 pillors of oop are:
+1.encapsulation: it is binding the data and functions.
+2.abstraction: hidding the data (or) information and giving access to only necessary.
+
+class PlayChar:
+    def __init__(self,name,age):
+        self.name = name
+	self.age = age
+    def speak(self):
+       print(f'he is an actor his name is {self.name} and his movie is {self.movie}')
+ class MovieHero:
+    def __init__(self,name,movie):
+       self.name=name
+       self.movie = movie
+    def speak(self):
+       print(f'he is an actor his name is {self.name} and his movie is {self.movie}')
+p1=PlayChar('rahul',24)
+h1=MovieHero('VD','arjun reddy')
+print(p1.speak())
+print(h1.speak())
+note:-
+for suppose
+p1.name = '!!!'
+h1.movie = '$$$'
+print(p1.speak())
+print(h1.speak())
+----------------------------------------------------
+private vs public variable concept:-
+class PlayChar:
+    def __init__(self,_name,_age):
+        self._name = _name
+        self._age = _age
+    def speak(self):
+       print(f'he is an actor his name is {self.name} and his movie is {self.movie}')
+ class MovieHero:
+    def __init__(self,_name,_movie):
+       self._name=_name
+       self._movie = _movie
+    def speak(self):
+       print(f'he is an actor his name is {self._name} and his movie is {self._movie}')
+p1=PlayChar('rahul',24)
+h1=MovieHero('VD','arjun reddy')
+print(p1.speak())
+print(h1.speak())
+note:-
+for suppose
+p1._name = '!!!'
+h1._movie = '$$$'
+print(p1.speak())
+print
+(h1.speak())
+Note:-
+but there is no perfect private variable in python.
+-----------------------------------------------------
+3. inheritance:- is allows new object to take on the properties of existing one
+syntax:
+class User:
+   def signin(self):
+      return 'logged in'
+class Wizard(User):
+   pass
+class Archer(User):
+   pass
+p1=Wizard()
+p2=Archer()
+
+class User:
+  def signin(self):
+     print("logged in")
+  def attack(self):
+     print("nothing to attack")
+class Wizard(User):
+  def __init__(self,name,power):
+    User.attack(self) # this line added to print attack on both user and wizard
+    self.name = name
+    self.power = power
+  def attack(self):
+    print(f'hello {self.name} you power is {self.power}')
+p1=Wizard('mohan',100)
+print(p1.attack())
+
+print(isinstance(Wizard,p1)) # True
+--------------------------------------------------
+4,polymorphism:- here poly means many morphism means forms
+def player_attack(char):
+     char.attack()
+player_attack(Wizard)
+# this is the way polymorphism is useful in python
+         or
+#by using for loop
+for user in [wizard,Archer]:
+     user.attack()
+ print(user.attack())
+
+
+
