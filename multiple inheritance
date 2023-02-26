@@ -1,0 +1,21 @@
+class PlayChar:
+  def sign_in(self):
+    print("logged in")
+class Wizard(PlayChar):
+  def __init__(self,name,power):
+    self.name = name
+    self.power = power
+  def run(self):
+    print("run done")
+class Archer(PlayChar):
+  def __init__(self,name,arrows):
+    self.name = name
+    self.arrows = arrows
+  def run(self):
+    print("run done")
+class Super(Wizard,Archer):
+  def __init__(self,name,power,arrows):
+    Wizard.__init__(self,name,power)
+    Archer.__init__(self,name,arrows)
+p1=Super("mohan",100,80)
+print(p1.power)
