@@ -1,0 +1,8 @@
+#dict comprehension
+di = {num:num**2 for num in [1,2,3]}
+print(di)
+
+#dict comprehension
+dd = {'a':1,'b':2,'c':3,'d':4}
+di = {key:value**2 for key,value in dd.items()}
+print(di)
