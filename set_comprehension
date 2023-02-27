@@ -1,0 +1,11 @@
+# squaring the set comprehension
+set = {char**2 for char in (1,2,3,4)}
+print(set)
+
+# even number the set by using set comprehension
+set1 = {char**2 for char in [1,2,3,4] if char%2==0}
+print(set1)
+
+#set comprehension
+set2={char for char in "hello"}
+print(set2)
