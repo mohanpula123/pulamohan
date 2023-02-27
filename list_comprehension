@@ -1,0 +1,21 @@
+#list comprehension
+list=[]
+for items in 'hello':
+  list.append(items)
+print(list)
+
+#single lined list comprehension
+my_list = [char for char in 'hello']
+print(my_list)
+
+#list comprehension for num
+mylist = [char for char in range(0,100)]
+print(mylist)
+
+# squaring the list by using list comprehension
+list = [char**2 for char in [1,2,3,4]]
+print(list)
+
+# even number the list by using list comprehension
+li = [char**2 for char in [1,2,3,4] if char%2==0]
+print(li)
