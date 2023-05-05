@@ -1,3 +1,7 @@
 some_list = [1,2,3,4,5,6,1,2]
 some=[i for i in some_list if some_list.count(i)>1]
 print(some)
+
+some_list = [1,2,3,4,5,6,1,2]
+some=list(set([i for i in some_list if some_list.count(i)>1]))
+print(some)
