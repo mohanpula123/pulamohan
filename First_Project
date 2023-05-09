@@ -1,0 +1,47 @@
+print("Q1) how many 100 sachin hits in his carrier?")
+print('a)50')
+print('b)75')
+print('c)90')
+print('d)100')
+correct='d'
+ans=input('answer plz:')
+if ans== correct:
+  print("correct answer")
+else:
+  print("wrong answer")
+print("Q2) who scored highest runs in ODI cricket")
+print('a)Virat Kohli')
+print('b)Guptil')
+print('c)Rohit Sharma')
+print('d)Sehwag')
+co ='c'
+z=input('answer plz:')
+if z== co:
+   print("correct answer")
+else:
+     print('wrong answer')
+
+print("Q3) who hits six sixes in one over")
+print('a)Rohit Sharma')
+print('b)Virat Kohli')
+print('c)Yuvi')
+print('d)NONE')
+c='c'
+b=input('answer plz:')
+if b== c:
+  print("correct answer")
+else:
+  print("wrong answer")
+
+if ans==correct and z==co and b==c :
+    print("your score is")
+    print(len(correct)+len(co)+len(c),"/",len(correct)+len(co)+len(c))
+elif ans==correct and z==co:
+    print(len(correct)+len(co),'/',len(correct)+len(co)+len(c))
+elif ans==correct and b==c:
+    print(len(correct)+len(c),'/',len(correct)+len(co)+len(c))
+elif z==co and b==c:
+    print(len(correct)+len(c),'/',len(correct)+len(co)+len(c))
+else:
+    print(len(correct),'/',len(correct)+len(co)+len(c))
+
