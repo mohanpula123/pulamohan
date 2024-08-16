@@ -1,0 +1,32 @@
+import random 
+
+N="y"
+while N=="y":
+    x=random.randint(1,6)
+    if x==1:
+        print("[-----]")
+        print("[--1--]")
+        print("[-----]")
+    if x==2:
+        print("[-----]")
+        print("[--2--]")
+        print("[-----]")
+    if x==3:
+        print("[-----]")
+        print("[--3--]")
+        print("[-----]")
+    if x==4:
+        print("[-----]")
+        print("[--4--]")
+        print("[-----]")
+    if x==5:
+        print("[-----]")
+        print("[--5--]")
+        print("[-----]")
+    if x==6:
+        print("[-----]")
+        print("[--6--]")
+        print("[-----]")
+
+    N=input("enter y:")
+    print("\n")

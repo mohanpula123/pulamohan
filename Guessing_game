@@ -1,0 +1,16 @@
+import random
+number=random.randint(1,10)
+gg=0
+while gg<5:
+    guess=int(input('enter:'))
+    gg+=1
+    if guess > number:
+        print("too big")
+    if guess<number:
+        print('t00 small')
+    if guess==number:
+        break
+if guess==number:
+    print("congrats"+" "+ 'you achieved it in'+" " +str(gg))
+else:
+    print("sorry to say this Wrong guess")
